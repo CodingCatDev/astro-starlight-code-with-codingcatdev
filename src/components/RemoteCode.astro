@@ -1,0 +1,8 @@
+---
+const resp = await fetch(
+  "https://raw.githubusercontent.com/withastro/starlight/main/docs/src/content/docs/guides/authoring-content.md"
+);
+const content = await resp.text();
+---
+
+{content}

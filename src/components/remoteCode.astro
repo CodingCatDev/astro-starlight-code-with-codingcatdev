@@ -1,0 +1,9 @@
+---
+import { Code } from "@astrojs/starlight/components";
+const resp = await fetch(
+  "https://raw.githubusercontent.com/withastro/starlight/main/docs/src/content/docs/guides/authoring-content.md"
+);
+const content = await resp.text();
+---
+
+<Code ins="create" lang="md" code={content} title="Remote Code Snippet" />
